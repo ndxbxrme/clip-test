@@ -1,15 +1,15 @@
 {
   "name": "clip-test",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "ndx-framework web app",
   "main": "app/main.js",
   "scripts": {
     "start": "electron .",
-    "pack": "build --win -p always"
+    "pack": "build --win --mac -p always"
   },
   "build": {
     "appId": "com.ndxbxrme.clip-test",
-    "productName": "Screenclipper"
+    "productName": "ClipTest"
   },
   "repository": {
     "type": "git",
