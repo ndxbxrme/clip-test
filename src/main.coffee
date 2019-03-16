@@ -10,7 +10,9 @@ ready = ->
   autoUpdater.checkForUpdatesAndNotify()
   mainWindow = new BrowserWindow
     width: 800
-    height: 600
+    height: 570
+    resizable: false
+    autoHideMenuBar: true
   mainWindow.on 'closed', ->
     mainWindow = null
   mainWindow.loadURL url.format

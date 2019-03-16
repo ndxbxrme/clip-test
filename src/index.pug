@@ -1,4 +1,14 @@
 html
   head
+    link(rel='stylesheet', href='./app.css')
   body
-    h1 hi there
+    canvas
+    .rec
+    .reduction
+    .controls
+      h3 controls
+    .clips
+      h3 clips
+        button(onclick='renderer.deleteAllClips()') Delete All
+    script.
+      window.renderer = require('./renderer');

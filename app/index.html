@@ -1,7 +1,20 @@
 
 <html>
-  <head></head>
+  <head>
+    <link rel="stylesheet" href="./app.css"/>
+  </head>
   <body>
-    <h1>hi there</h1>
+    <canvas></canvas>
+    <div class="rec"></div>
+    <div class="reduction"></div>
+    <div class="controls">
+      <h3>controls</h3>
+    </div>
+    <div class="clips">
+      <h3>clips
+        <button onclick="renderer.deleteAllClips()">Delete All</button>
+      </h3>
+    </div>
+    <script>window.renderer = require('./renderer');</script>
   </body>
 </html>
