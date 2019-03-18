@@ -83,7 +83,7 @@
     connectRange(compressor, 'release', 0.25, 0.01);
     connectRange(cutoff, 'time', .5, 0.01, 0, 5);
     connectRange(cutoff, 'threshold', -10, 0.1, -40, 0);
-    connectRange(cutoff, 'min_size', 40000, 100, 1000, 100000);
+    connectRange(cutoff, 'min_size', 20000, 100, 1000, 100000);
     process = function() {
       requestAnimationFrame(process);
       viz.draw();
